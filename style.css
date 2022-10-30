@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --ff-heading: 'Staatliches', sans-serif;
+    --ff-texting: 'Palanquin', sans-serif;
+
+    
+    --hue: 250;
+    --bg-primary: hsl(var(--hue), 100%, 97%);
+    --bg-secondary: hsl(218, 17%, 62%);
+    --sp-color: hsl(312, 91%, 96%);
+    --hd-color: hsl(275, 18%, 79%);
+    --fc-pink: hsl(var(--hue), 17%, 35%);
+    --fc-secondary: hsl(var(--hue), 84%, 12%);
+
+    font-size: 62.5%;
+    
+
+
+}
+
+body {
+    font-family: var(--ff-heading);
+    background-color: var(--bg-primary);
+
+}
+
+.page {
+    max-width: 38.4rem;
+    margin: 0 auto;
+}
+
+@media (min-width:700px) {
+    .page {
+        max-width: 128rem;
+    }
+    
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-secondary);
+    height: 279px;
+
+}
+
+
+header img {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    width: 137px;
+    height: 137px;
+    object-fit: cover;
+}
+
+header h1 {
+    height: 50px;
+    background-color: var(--hd-color);
+    width: 100%;
+    font-size: 4.0rem;
+    text-align: center;
+    letter-spacing: 0.05rem;
+    font-weight: 400;
+    padding-top: 8px;
+    line-height: 3.4rem;
+    color: var(--bg-primary);
+
+}
+
+main {
+
+    display: grid;
+    align-items: center;
+    
+}
+
+main p {
+    max-width: 30.5rem;
+    margin: 1.4rem 4.3rem 6.3rem 3.6rem;
+    font-weight: 400;
+    font-size: 2.0rem;
+    font-family: var(--ff-texting);
+    text-align: center;
+    line-height: 2rem;
+}
+
+.card {
+    position: relative;
+    margin-bottom: 3.2rem;
+}
+
+.card img {
+    animation: downtop 1000ms 0ms reverse;
+
+}
+
+.card h2 {
+    top: 2.0rem;
+    right: 2.0rem;
+    position: absolute;
+    font-size: 2.0rem;
+    color: var(--fc-pink);
+    line-height: 3.4rem;
+    letter-spacing: 0.05em;
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+    font-weight: 400;
+    animation: topdown 2500ms;
+}
+
+.card h2 span {
+    border-radius: 2.0rem;
+    background-color: var(--sp-color);
+    width: 11.2rem;
+    height: 3.5rem;
+    text-align: center;
+    animation: topdown 2500ms;
+    
+
+}
+
+
+@keyframes topdown {
+    0% {
+        opacity: 1;
+        transform: translateY(-45px);
+        
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes downtop {
+    100% {
+        opacity: 0;
+        transform: translateY(45px);
+    }
+
+}
