@@ -2,62 +2,87 @@
 <html lang="pt-br">
 
 <head>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio Mobile First</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Palanquin&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Cream Sorvetes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin&family=Staatliches&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <div class="page">
-
+    <div class="wrapper">
         <header>
-            <img src="images/logo.svg" alt="logo se um sorvete">
-            <h1>SPACE CREAM</h1>
+            <div class="logo">
+                <img id="ring1" src="./img/ring1.svg" />
+                <img id="ring2" src="./img/ring2.svg" />
+                <img src="img/logo.svg" id="globe" alt="logotipo de um sorvete de casquinha roxo sobre um planeta" />
+            </div>
+            <h1>Space Cream</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a
+                rhoncus leo. Donec at scelerisque magna. Nullam vitae neque sit amet
+                erat dignissim cursus ac ac lectus. Aliquam erat volutpat. Praesent at
+                quam aliquet, pharetra est in, sagittis lorem.elit. Donec a rhoncus
+                leo. Donec at scelerisque magna. Nullam vitae neque sit amet erat
+                dignissim cursus ac ac lectus. Aliquam erat volutpat. Praesent at quam
+                aliquet, pharetra est in, sagittis lorem.
+            </p>
         </header>
 
-        <main>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a rhoncus leo. Donec at scelerisque magna.
-                Nullam vitae neque sit amet erat dignissim cursus ac ac lectus. Aliquam erat volutpat. Praesent at quam
-                aliquet.
-            </p>
+        <div class="content">
+            <main>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a
+                    rhoncus leo. Donec at scelerisque magna. Nullam vitae neque sit amet
+                    erat dignissim cursus ac ac lectus. Aliquam erat volutpat. Praesent
+                    at quam aliquet.
+                </p>
 
-            <div class="card">
-                <h2><span>PALETAS</span></h2>
-                <img src="images/sorvete1.png"
-                    alt="Imagem de computador, smartphone, fone, em cima de uma mesa com café">
+                <div class="cards">
 
-            </div>
+                    <div class="card" id="grid1">
+                        <h2>Paletas</h2>
+                        <img src="./img/sorvete1.png" alt="Paletas" />
+                    </div>
 
-            <div class="card">
-                <h2><span>SHAKES</span></h2>
-                <img src="images/sorvete2.png"
-                    alt="Imagem de computador, smartphone, fone, em cima de uma mesa com café">
+                    <div class="card" id="grid2">
+                        <h2>Shakes</h2>
+                        <img src="./img/sorvete2.png" alt="Shakes" />
+                    </div>
 
-            </div>
+                    <div class="card" id="grid3">
+                        <h2>Paletas</h2>
+                        <img src="./img/sorvete1.png" alt="Paletas" />
+                    </div>
 
-            <div class="card">
-                <h2><span>MASSAS</span></h2>
-                <img src="images/sorvete3.png"
-                    alt="Imagem de computador, smartphone, fone, em cima de uma mesa com café">
+                    <div class="card" id="grid4">
+                        <h2>Picolés</h2>
+                        <img src="./img/sorvete4.png" alt="Picolés" />
+                    </div>
 
-            </div>
-            <div class="card">
-                <h2><span>PICOLÉS</span></h2>
-                <img src="images/sorvete4.png"
-                    alt="Imagem de computador, smartphone, fone, em cima de uma mesa com café">
+                    <div class="card" id="grid5">
+                        <h2>Massas</h2>
+                        <img src="./img/sorvete3.png" alt="Massas" />
+                    </div>
 
-            </div>
+                    <div class="card" id="grid6">
+                        <h2>Picolés</h2>
+                        <img src="./img/sorvete4.png" alt="Picolés" />
+                    </div>
 
 
+                </div>
+            </main>
 
-        </main>
+            <footer>
+                <p>fale conosco no instagram <a href="https://www.instagram.com/spaceicecreams/"
+                        target="_blank">@space_cream</a></p>
+            </footer>
+        </div>
     </div>
-
 </body>
 
 </html>
